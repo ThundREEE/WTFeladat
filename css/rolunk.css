@@ -1,0 +1,91 @@
+body {
+    background-color: #dff5ce;
+    background-position: left top;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #476930;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 15px;
+
+}
+
+.cegfelirat {
+    color: #f1dddf;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 40px 0 0;
+    font-size: 30px;
+
+}
+
+
+.link:hover {
+    color: #f1dddf;
+}
+
+nav .link {
+    color: #c8b88a;
+    padding: 15px 15px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav .jelenlegi {
+    color: #f1dddf;
+    padding: 15px 15px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+img {
+    height: 300px;
+    margin: 0 20px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.kepek {
+    text-align: center;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+div p {
+    font-size: 25px;
+    text-align: center;
+    margin: 40px 300px;
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    background-color: rgb(97, 97, 97);
+    padding-left: 30px;
+    box-shadow: 0px 0px 15px 15px rgba(150, 150, 150, 0.513);
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #dee2fc;
+    font-size: 17px;
+
+
+}
