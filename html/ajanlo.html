@@ -31,9 +31,21 @@
             <div class="bal"><label>Születési dátum:</label></div>
             <div class="jobb"><input id="date" type="date" name="birthdate" required/></div>
         </div>
+        <div class="sor">
+            <div class="bal"><label>Allergiás vagy az állatszőrre? </label></div>
+            <div class="jobb"><input id="allergia" type="checkbox" name="allergy"></div>
+        </div>
         <div class="row">
             <div class="bal"><label>Naponta hány órát vagy otthon: </label></div>
             <div class="jobb"><input id="otthonlet" type="number" name="hometime" required/></div>
+        </div>
+        <div class="row">
+            <div class="bal"><label>Szabadban vagy lakásban tartanád:</label></div>
+            <div class="jobb">
+                <label>kint <input type="radio" name="location" value="kint" checked/></label>
+                <label>bent <input type="radio" name="location" value="bent"/></label>
+            </div>
+
         </div>
         <div class="row">
             <div class="bal"><label>Mekkora területen laksz (m<sup>2</sup>): </label></div>
