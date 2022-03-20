@@ -37,7 +37,7 @@ h1 {
 
 img {
     height: 300px;
-    padding: 10 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     transition: 0.4s;
 }
@@ -111,7 +111,7 @@ section {
 .blog-heading h3 {
     font-size: 2.4rem;
     font-weight: 600;
-    margin: 0px;
+    margin: 0;
 }
 
 .blog-container {
@@ -142,7 +142,7 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    margin: 0px;
+    margin: 0;
     transform: none;
 }
 
@@ -159,7 +159,7 @@ section {
 
 .blog-title {
     font-size: 1.3rem;
-    width: 500;
+    width: 500px;
     color: #272727;
 }
 
@@ -179,7 +179,7 @@ section {
 }
 
 .keret {
-    margin: 0px 300px;
+    margin: 0 300px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -268,7 +268,7 @@ fieldset {
     border: 2px solid lightgray;
     border-radius: 15px;
     background-color: rgba(211, 211, 211, 0.5);
-    box-shadow: 0px 0px 10px 10px rgba(200, 200, 200, 0.5);
+    box-shadow: 0 0 10px 10px rgba(200, 200, 200, 0.5);
 }
 
 legend {
@@ -291,7 +291,7 @@ input {
     border: 2px solid lightgray;
     border-radius: 5px;
     height: 25px;
-    margin: 10px 0px;
+    margin: 10px 0;
 
 }
 
@@ -321,21 +321,8 @@ input[type="reset"], input[type="submit"] {
 
 input[type="reset"]:hover, input[type="submit"]:hover {
     color: #c8b88a;
-    box-shadow: 0px 0px 5px 5px rgba(128, 127, 127, 0.35);
+    box-shadow: 0 0 5px 5px rgba(128, 127, 127, 0.35);
     cursor: pointer;
-}
-
-textarea {
-    height: 50px;
-    width: 30%;
-    font-size: 15px;
-    resize: vertical;
-    background-color: rgba(211, 211, 211, 0.5);
-    border: 2px solid lightgray;
-    border-radius: 15px;
-    padding: 15px;
-    min-height: 50px;
-    box-shadow: 0px 0px 10px 10px rgba(200, 200, 200, 0.5);
 }
 
 input:focus {
@@ -372,7 +359,7 @@ footer {
     padding-bottom: 15px;
     background-color: rgb(97, 97, 97);
     padding-left: 30px;
-    box-shadow: 0px 0px 15px 15px rgba(150, 150, 150, 0.513);
+    box-shadow: 0 0 15px 15px rgba(150, 150, 150, 0.513);
     overflow: hidden;
 }
 
