@@ -58,6 +58,7 @@ img {
     padding: 10px 20px;
     border-radius: 35px;
     transition: 0.4s;
+    max-width: 600px;
 }
 
 img:hover {
@@ -394,7 +395,8 @@ aside {
     width: 30%;
     padding-left: 10px;
     margin-left: 10px;
-    float: right;
+    object-fit: cover;
+    object-position: center;
     font-style: italic;
     overflow: hidden;
 }
