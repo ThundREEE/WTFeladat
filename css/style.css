@@ -42,6 +42,17 @@ h1 {
     font-size: 60px;
 }
 
+h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
 img {
     height: 300px;
     padding: 10px 20px;
@@ -210,6 +221,13 @@ blockquote {
 
 strong {
     padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.bekezdes {
+    font-size: 20px;
+    line-height: 1.1;
 }
 
 .erdekes {
