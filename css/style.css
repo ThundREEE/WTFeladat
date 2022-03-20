@@ -28,6 +28,13 @@ nav .jelenlegi {
     text-decoration: none;
 }
 
+#icon {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+
 h1 {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -38,7 +45,7 @@ h1 {
 img {
     height: 300px;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 35px;
     transition: 0.4s;
 }
 
@@ -138,7 +145,7 @@ section {
 }
 
 .blog-img img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -323,6 +330,19 @@ input[type="reset"]:hover, input[type="submit"]:hover {
     color: #c8b88a;
     box-shadow: 0 0 5px 5px rgba(128, 127, 127, 0.35);
     cursor: pointer;
+}
+
+textarea {
+    height: 50px;
+    width: 30%;
+    font-size: 15px;
+    resize: vertical;
+    background-color: rgba(211, 211, 211, 0.5);
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 50px;
+    box-shadow: 0 0 10px 10px rgba(200, 200, 200, 0.5);
 }
 
 input:focus {
