@@ -37,7 +37,7 @@ h1 {
 
 img {
     height: 300px;
-    margin: 0 20px;
+    padding: 10 20px;
     border-radius: 8px;
     transition: 0.4s;
 }
@@ -172,9 +172,90 @@ section {
     text-align: left;
 }
 
-.tovabb {
+.balra {
     text-align: right;
+    overflow: hidden;
+    margin-top: 5px;
 }
+
+.keret {
+    margin: 0px 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.kep {
+    margin-top: 10px;
+    object-fit: cover;
+    object-position: center;
+    height: 50%;
+    width: 50%;
+}
+
+blockquote {
+    text-align: justify;
+    font-size: 1rem;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+strong {
+    padding-bottom: 10px;
+}
+
+.erdekes {
+    overflow: hidden;
+    padding: 5px;
+    margin: 10px;
+    background-color: palegreen;
+    border-left: 10px solid #5cd65c;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.szoveg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.szoveg-box {
+    width: 60%;
+    margin: 20px;
+    background-color: #d6f3be;
+    border: 1px solid #c8efa9;
+}
+
+.szoveg-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.szoveg-heading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+.szoveg-heading h2 {
+    font-size: 50px;
+}
+
+.szoveg p {
+    color: black;
+    font-size: large;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 20px 8px;
+    text-align: justify;
+}
+
 
 /* Ajánló */
 form {
@@ -292,10 +373,12 @@ footer {
     background-color: rgb(97, 97, 97);
     padding-left: 30px;
     box-shadow: 0px 0px 15px 15px rgba(150, 150, 150, 0.513);
+    overflow: hidden;
 }
 
 footer p {
     margin-bottom: 0;
     color: #dee2fc;
     font-size: 17px;
+    overflow: hidden;
 }
