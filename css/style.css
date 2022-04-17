@@ -1,0 +1,158 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo {
+	position: relative;
+	max-width: 80px;
+	filter: invert(1);
+}
+
+nav ul {
+	position: relative;
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	display: inline-block;
+	color: #333;
+	font-weight: 400;
+	font-size: 1.3em;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid #333;
+}
+
+.jelenlegi {
+    border-bottom: 2px solid #333;
+}
+
+.kör {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #017143;
+	clip-path: circle(800px at right 900px);
+}
+
+.content {
+	position: relative;
+	justify-content: space-between;
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.content .textBox {
+	position: relative;
+	width: 40%;
+}
+
+.content .textBox h2 {
+	color: #333;
+	font-size: 4em;
+	font-weight: 500;
+	line-height: 1.4em;
+}
+
+.content .textBox h2 span {
+	color: #017143;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+.content .textBox p {
+	color: #darkred;
+}
+
+.content .textBox a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #017143;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.content .imgBox {
+	width: 35%;
+	display: flex;
+	justify-content: flex-start;
+	padding-right: 50px;
+	margin-top: 50px;
+}
+
+.content .imgBox img {
+	max-width: 29em;
+	max-height: 42rm;/*valamiért nem érvényes*/
+}
+
+.mini {
+	position: absolute;
+	left: 50px;
+	bottom: 20px;
+	transform: translateX(-50px);
+	display: flex;
+	width: 55%;
+	justify-content: right;
+}
+
+.mini li {
+	list-style: none;
+	display: inline-block;
+	margin: 0px 20px;
+	transition: 0.2s;
+}
+
+.mini li:hover {
+	transform: translateY(-15px);
+}
+
+.mini li img {
+	max-width: 60px;
+}
+
+footer {
+    background-color: rgb(30, 30, 40);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
