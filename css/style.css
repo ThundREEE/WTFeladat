@@ -62,6 +62,7 @@ img {
 
 img:hover {
     transform: scale(1.05);
+    position: relative;
 }
 
 div p {
