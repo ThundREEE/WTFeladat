@@ -63,34 +63,34 @@ function usernameExists($connection, $username, $email) {
 }
 
 function createUser($connection, $name, $username, $email, $password) {
-	$sql = "INSERT INTO users (usersName, usersEmail, usersUsername, usersPassword) VALUES (?, ?, ?, ?)";
+	$sql = "INSERT INTO users (usersName, usersEmail, usersUsername, usersPassword) VALUES (?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($connection);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
 		header("location: ../signup.php?error=stmtFailed");
 		exit();
 	}
 
-	$hashedPassword = password_hash($password, PASSWORD_DEFAULT)
+	$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 	mysqli_stmt_bind_param($stmt, "ssss", $name, $username, $email, $hashedPassword);
 	mysqli_stmt_execute($stmt);
 	mysqli_stmt_close($stmt);
-	echo "Sikeresen regisztráltál!"
+	echo "Sikeresen regisztráltál!";
 	header("location: ../signup.php?error=none");
 	exit();
 }
 
 function emptyImputLogin($username, $password) {
-	$results;
+	$result;
 	if (empty($username) || empty($password)) {
-		$results = true;
+		$result = true;
 	} else {
-		$results = false;
+		$result = false;
 	}
-	return $results;
+	return $result;
 }
 
-loginUser($connection, $username, $password) {
+function loginUser($connection, $username, $password) {
 	$usernameExists = usernameExists($connection, $username, $username);
 
 	if ($usernameExists === false) {
@@ -99,7 +99,7 @@ loginUser($connection, $username, $password) {
 	}
 
 	$passwordHashed = $usernameExists["usersPassword"];
-	$checkPassword = password_verify($password, $passwordHashed)
+	$checkPassword = password_verify($password, $passwordHashed);
 	if ($checkPassword  === false) {
 		header("location: ../login.php?error=wrongLogin");
 		exit();

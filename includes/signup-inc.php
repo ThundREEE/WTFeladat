@@ -7,17 +7,16 @@ if (isset($_POST['singup-btn'])) {
 	$password = $_POST['password'];
 	$password2 = $_POST['password2'];
 
-	echo "eddig Jó";
+	require_once "databaseHandler-inc.php";
+	require_once "functions-inc.php";
 
-	require_once 'databaseHandler-inc.php';
-	require_once 'functions-inc.php';
 
 	if (emptyImputSignup($name, $email, $username, $password, $password2) != false) {
 		header("location: ../signup.php?error=emptyImput");
 		exit();
 	}
 
-	if (invalidUUsername($username) != false) {
+	if (invalidUsername($username) != false) {
 		header("location: ../signup.php?error=invalidUsername");
 		exit();
 	}
